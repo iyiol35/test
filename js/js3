@@ -1,0 +1,71 @@
+//----------TÜR DÖNÜŞÜMERİ----------
+//!-- VERİ TİPLERİ:
+//1.Primitif tipler: STRİNG,NUMBER,BOOLEAN,UNDEFİNED,NULL
+//2.Gelişmiş tipler: OBJECT,FUNCTION -->
+//JS TE TÜM DEĞERLER ""-->STRİNG GELİR..Biz bu veri tipini ihtiyacımıza göre tür dönüşüm
+//teknikleri ile dönüştürebiliriz.
+
+//VERİ TİPİ ni nasıl öğreniyoruz?
+//console.log(type of değer) ile konsola veritipini yazdırarak veri tipini öğrenebiliriz.
+
+//NUMBER a çevirme:
+//js te SAYILARI string hallaeriyle matematiksel işlemlerde kullanamayız.
+//Matematiksel işlemlerde kullanmak için;-öncelikle gelen string değeri-
+//NUMBER a çevirmemiz gerekir.
+
+//STRİNG VERİ TİPİNDEN NUMBER VERİ TİPİNE ÇEVİRME:
+
+//önce veri tipini ğrenelim:
+//let a =5;//->number tip
+//let b="10";//->string veri tipi
+//console.log(typeof a);
+//console.log(typeof b);
+//console.log(a+b);//string ve number birleştirilir:510
+
+//let a=Number("b");//numbera çevrilemez-->NaN(NOT A NUMBER) döner 
+
+//number a çevirme 1.yöntem.
+//let b="10";
+//b yi number a çevirmek için://
+//let c=Number(b);
+//console.log(c);
+//console.log(typeof c);
+//number a çevirme 2.yöntem.
+//let a =5;//->number tip
+//let b="10";//->burda number a çevirebiliriz.
+//let b=Number("10");
+//console.log(a+b);
+//number a çevirme 3.yöntem.
+//let a=8;
+//let b="12";
+//console.log(a+b);//812
+//let b=parseInt("12");
+//console.log(a+b);
+//let c=parseFloat("15.3");
+//console.log(c);
+//console.log(a+c);
+
+//NUMBER VERİ TİPİNDEN STRİNG VERİ TİPİNE DÖNÜŞTÜRME:
+//let x=55;
+//let x=String(55);
+//let x=(55).toString();
+//console.log(typeof x);
+//console.log(x);
+
+//BOOLEAN dan string e DÖNÜŞTÜRME
+//let sonuc=true;
+//console.log(sonuc);
+//console.log(typeof sonuc);
+//let sonuc=String(true);
+//console.log(sonuc);
+//console.log(typeof sonuc);
+
+//OBJECT VERİ TİPİNDEN STRİNG E ÇEVİRME:
+//let rakamlar=[1,2,3,4];
+//let rakamlar=String([1,2,3,4])
+//console.log(typeof rakamlar);
+//console.log(rakamlar);
+//let rakamlar=Number([1,2,3,4]);
+//console.log(rakamlar);//NaN döner çünkü diziyi(array) sayı olarak okuyamaz..
+
+

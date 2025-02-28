@@ -1,0 +1,146 @@
+//------IF (KOŞUL) BLOKLARI
+//let not = 75
+//if (not >= 85) {
+//  console.log("TEBRİKLER!! Takdir belgesi aldiniz!" + not);
+//} else {
+//   console.log("UZGUNUM!!Daha cok calişmaniz gerek!" + not);
+//}
+//console.log(not);
+//let yas = Number(prompt("Yasiniz:"));
+//let para = prompt("Bütçeniz");
+//if (yas >= 18 && para >= 3000) {
+//  alert("ehliyet sınavına katılabiirsiniz");
+//} else {
+//  alert("ehliyet sınavına katılamasınız");
+//}
+//DERS ORTALAMASI BULMA
+// vize1 %30,vize2 %30,final%40 etkilesin sınıf geçmeyi
+//let vize2 = Number(prompt("vize2 notunuzu giriniz:"));
+//let final = Number(prompt("Final notunuzu giriniz:"));
+//let ortalama = (vize1 * 0.3) + (vize2 * 0.3) + (final * 0.4);
+//if (ortalama >= 60) {
+//  alert("TEBRİKLER!GEÇTİNİZ!!" + ortalama);
+// console.log("TEBRİKLER!GEÇTİNİZ!!");
+//} else {
+//  alert("ÜZGÜNÜM!KALDINIZ!!" + ortalama);
+// console.log("ÜZGÜNÜM!KALDINIZ!!");
+//}
+//console.log(ortalama);
+
+// let secilenMeyve = prompt("Lütfen almak istediğiniz meyveyi giriniz:");
+// if (secilenMeyve == "elma") {
+//     alert("Seçtiğiniz meyve" + secilenMeyve + "dir.");
+//     console.log("Seçtiğiniz meye" + secilenMeyve + "dir.");
+// }
+// else if (secilenMeyve == "armut") {
+//     alert("Seçtiğiniz meyve" + secilenMeyve + "dir.");
+//     console.log("Seçtiğiniz meyve" + secilenMeyve + "dir.");
+// }
+// else if (secilenMeyve == "muz") {
+//     alert("Seçtiğiniz meyve" + secilenMeyve + "dir.");
+//     console.log("Seçtiğiniz meyve" + secilenMeyve + "dir.");
+// }
+// else {
+//     // alert("Lütfen geçerli bir meyve giriniz!!");
+//     console.log("Lütfen geçerli bir meyve giriniz!!");
+// };
+// let secilenMeslek = prompt("Lütfen meslek giriniz:");
+// if (secilenMeslek == "hemşire") {
+//     alert("işin yaş!!");
+//     console.log("hadi ordan: :DD");
+// }
+
+// else if (secilenMeslek == "avukat") {
+//     alert("yalancı!!");
+//     console.log("git lan işine!!");
+// }
+// else if (secilenMeslek == "doktor") {
+//     alert("hahahaha");
+//     console.log("iğne de yapıyon mu?");
+// }
+// else {
+//     alert("işsizzzzzzz");
+//     console.log("ne o okuyamadın mı işsizz");
+// }
+//let meyveSepeti = ["elma", "armut", "incir", "üzüm", "ayva"]
+//console.log(meyveSepeti);
+// let secilenMeyve1 = prompt("Lütfen 1.meyvenizi seçiniz:");
+// let secilenMeyve2 = prompt("Lütfen 2.meyvenizi seçiniz:");
+// let secilenMeyve3 = prompt("Lütfen 3.meyvenizi seçiniz:");
+// let secilenMeyve4 = prompt("Lütfen 4.meyvenizi seçiniz:");
+// let secilenMeyve5 = prompt("Lütfen 5.meyvenizi seçiniz:");
+// if (secilenMeyve1 = "elma") {
+//     alert(secilenMeyve1 + "meyveniz sepete eklenmiştir");
+//     console.log(secilenMeyve1 + "meyveniz sepete eklenmiştir");
+// }
+// else if (secilenMeyve2 = "armut") {
+//     alert(secilenMeyve2 + "meyveniz sepete eklenmiştir");
+//     console.log(secilenMeyve2 + "meyveniz sepete eklenmiştir");
+// }
+// else if (secilenMeyve3 = "incir") {
+//     alert(secilenMeyve3 + "meyveniz sepete eklenmiştir");
+//     console.log(secilenMeyve3 + "meyveniz sepete eklenmiştir");
+// }
+// else if (secilenMeyve4 = "üzüm") {
+//     alert(secilenMeyve4 + "meyveniz sepete eklenmiştir");
+//     console.log(secilenMeyve4 + "meyveniz sepete eklenmiştir");
+// }
+// else if (secilenMeyve5 = "ayva") {
+//     alert(secilenMeyve1 + "meyveniz sepete eklenmiştir");
+//     console.log(secilenMeyve1 + "meyveniz sepete eklenmiştir");
+// } else {
+//     alert("Lütfen sepetten bir meyve seçiniz!");
+//     console.log("kalmadı");
+// }
+//BENZİN UYGULAMASI
+// let dizel = 47.24, benzin = 45.32, lpg = 26.49;
+// const altSatir = "\r\n";
+// const secilenYakit = "1-DİZEL" + altSatir
+//     + "2-BENZİN" + altSatir
+//     + "3-LPG" + altSatir
+//     + "Lütfen almaktediğinizyakıt tipini giriniz:"
+// let yakitTipi = prompt(secilenYakit);
+// let yakitMiktari = Number(prompt("Lütfen almak istediğiniz yakıt miktarını giriniz:"));
+// let bakiye = Number(prompt("Lütfen bakiyenizi giriniz:"));
+
+
+// if (yakitTipi = "1") {
+//     let odenecekTutar = dizel * yakitMiktari;
+//     let kalanBakiye = bakiye - odenecekTutar;
+//     if (odenecekTutar < bakiye) {
+//         alert("Yakıt alma işlemi başarılıdır." + altSatir
+//             + "Kalan bakiye:" + kalanBakiye);
+//     } else {
+//         alert("bakiyeniz yeterli  değilidir!!" + altSatir
+//             + "Ödenecek tutar: " + odenecekTutar + altSatir
+//             + "Bakiye:" + bakiye + altSatir
+//             + "Eksik tutar:" + (odenecekTutar - bakiye));
+//     }
+// }
+// else if (yakitTipi = "2") {
+//     let odenecekTutar = benzin * yakitMiktari;
+//     let kalanBakiye = bakiye - odenecekTutar;
+//     if (odenecekTutar < bakiye) {
+//         alert("Yakıt alma işlemi başarılıdır." + altSatir
+//             + "Kalan bakiye:" + kalanBakiye);
+//     } else {
+//         alert("bakiyeniz yeterli  değilidir!!" + altSatir
+//             + "Ödenecek tutar: " + odenecekTutar + altSatir
+//             + "Bakiye:" + bakiye + altSatir
+//             + "Eksik tutar:" + (odenecekTutar - bakiye));
+//     }
+// }
+// else if (yakitTipi = "3") {
+//     let odenecekTutar = lpg * yakitMiktari;
+//     let kalanBakiye = bakiye - odenecekTutar;
+//     if (odenecekTutar < bakiye) {
+//         alert("Yakıt alma işlemi başarılıdır." + altSatir
+//             + "Kalan bakiye:" + kalanBakiye);
+//     } else {
+//         alert("bakiyeniz yeterli  değilidir!!" + altSatir
+//             + "Ödenecek tutar: " + odenecekTutar + altSatir
+//             + "Bakiye:" + bakiye + altSatir
+//             + "Eksik tutar:" + (odenecekTutar - bakiye));
+//     }
+// }
+

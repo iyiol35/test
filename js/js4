@@ -1,0 +1,107 @@
+//----DÖNGÜLER---------
+//Tek satırda yazılan kodla sürekli tekrarlanması gereken işlerde kullanılır.
+//Noktalı virgül ile bitiş yapılmaz döngülerde.
+//1.FOR DÖNGÜSÜ
+//2.WHİLE DÖNGÜSÜ
+//3.DO-WHILE DÖNGÜSÜ
+//4.FOR EACH DÖNGÜSÜ : Diziler yani arraylar da çalışır.
+
+//FOR DÖNGÜSÜ:
+
+//for(değişken;koşul;arttırma-azaltma){
+//kodlar
+//}
+
+//değişken-->let ile parantezin içinde tanımlanır.değişken adı genelde 'i' olarak adlandırılır.
+//for(let i=1;i<=10;i++){
+//i'yi 1'e tanımladık,iküçük ve eşit 10 'a olana kadar i ' yi 1 arttır.
+//conole.log(i);
+//}
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+//1' den 10 a kadar çift sayıları yazdıralım.
+// for (let i = 0; i <= 10; i += 2) {
+//     console.log(i);
+// }
+// for (let i = 1; i <= 10; i += 2) {
+//     console.log(i);
+// }
+// for (let i = 1; i <= 10; i++) {
+//     if (i % 2 == 1) {
+//         console.log("idil")
+//     }
+//     else {
+//         console.log("olcar");
+//     }
+// }
+//50 'den 1'e kadar gidip,toplalarını bulalım:
+// let toplam = 0;
+// for (let i = 50; i >= 1; i--) {
+//     toplam += i
+//     console.log(i);
+// }
+// console.log("toplam:", toplam);
+
+//WHILE DÖNGÜSÜ:
+//while(koşul){
+//kodlar
+// sayacın değerini arttır.
+//}
+//sayac deeğrini ayarlamazsan 'sonsuz döngüye girer.'Bu kaçınılması gereken bir durumdur.
+//while sadece içine koşul kabul eder.
+//değişken tanımı dışardan başlayarak yapılır.
+
+//1'den 10 'a kadar yazdıralım:
+// let sayac = 1;
+// while (sayac <= 10) {
+//     console.log(sayac);
+//     sayac++;//burda sayac arttırma olmazsa sonsuz döngüye girer.
+// }
+// let sayac = 0;
+// while (sayac <= 10) {
+//     if (sayac % 2 == 0) {
+//         console.log(sayac);
+//     }
+//     sayac++;
+// }
+// let sayac = 1;
+// while (sayac <= 10) {
+//     if (sayac % 2 == 1) {
+//         console.log(sayac);
+//     }
+//     sayac++;
+// }
+// let sayac = 1;
+// while (true) {//bu sonsuz döngüye girer.
+//     console.log(sayac);
+//     if (sayac == 7) {
+//         break;
+//     }
+//     sayac++;
+// }
+
+//DO-WHILE DÖNGÜSÜ:
+//while ile aynı mantıkla çalışır.
+//derleyici yukarıdan aşağıya okur.Bu yüzden while daki koşulu çalıştıktan sonra okur.
+//böylece bu döngü en az 1 kez çalışır.
+
+//do{
+    //kodlar
+//}while(koşul);
+
+// let sayac=1;
+// do{
+// console.log(sayac);
+// sayac++;
+// }while(sayac<=10);
+//1' den 20'ya kadar olan sayıların toplamını bulalım:
+// let sayac=1;
+// let toplam=0;
+// do{
+//     if(sayac%2==1){
+//         toplam+=sayac;
+//     }
+//     sayac++;
+// }while(sayac<=20);
+// console.log("toplam:",toplam);

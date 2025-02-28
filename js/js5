@@ -1,0 +1,31 @@
+//----BREAK VE CONTINUE ANAHTAR KELİMELERİ---
+//döngülerde kullanlır.
+
+//break anahtar kelimesi:
+//döngüleri kırmak,döngüden çıkmak için kullanılır.
+//döngüleri sonsuza kadar kırar.
+
+// let sayac = 1;
+// while (sayac <= 10) {
+//     console.log(sayac);
+//     if (sayac == 8) {
+//         break;
+//     }
+//     sayac++;
+// }
+
+//continue anahtar kelimesi:
+//döngüleri 1 defaya mahsus kırar.derleyici okumaya devam eder.
+
+// let sayac = 0;
+// while (sayac <= 10) {
+//     sayac++;
+//     if (sayac > 10) {
+//         break;
+//     }
+//     if (sayac == 8) {
+//         continue;
+//     }
+//     console.log(sayac);
+// }
+

@@ -1,0 +1,85 @@
+//-------FUNCTION (METOTLAR)----
+//kodları modül modül bölüp daha sonra tekrar kullanabilmeyi sağlar.
+//parça parça yazılıp bir yerde toplayabilirsiniz.bu toplandığı yerden de tekrar çıkararak kullanabiliriz.
+//büyük kod tekrarlarından korur,böylece geliştirmek ve yeniden düzenlemek dha kolay olur.
+//kopyala-yapıştır şeklinde kod yazılmaz.
+//function ;metot demektir js'te.
+//function'a isim verirken işimize uygun isim bermek öemlidir.
+//parantez gördüğünüzde onun bir fonksiyon (metot)olduğunu anları.
+//örn:parseFloat(),function()..
+
+//Parametresiz ve geriye değer döndürmeyen metot tanımlmak:
+//          function isim(){
+//              kodlar yazılacak
+//          }
+
+//aşağıda kod hazırlandı ancak çağrılmadan konsolda bir şey göremezsiniz.
+// function yazdir() {
+//     console.log("idil");
+// }
+// yazdir();//metot burda çağrıldı.kaç kez çağrırsanız o kadar gelir.
+// function topla() {
+//     console.group(5 + 7);
+// }
+// topla();//istediğiz yerden çağırabiliriz.aşağıda yukarıda frketmez.aynı sayfada olması yeterli.
+
+//parametreli ve geriye değer döndürmeyen metot tanımlamak:
+//yazılan fonksiyon verilen parametrelere göre çalışr.
+
+// function yazdir(isim, soyisim) {
+//     console.log(isim + " " + soyisim);
+// }
+// yazdir("idil", "olcar");
+// yazdir("hülya", "okur");
+
+// cube(5);
+// function cube(sayi) {
+//     console.log(sayi * sayi * sayi);
+// }
+
+//burda let tanımlamasını dısarda yaptığımız için metodu bu let in üstünde tanımlayamayız.
+// let yas = Number(prompt("Lütfen yaşınızı giriniz:"));
+// function kontrolEt(yas) {
+//     if (yas < 18) {
+//         console.log("Ehliyet alamazsınız.");
+//     } else {
+//         console.log("Ehliyet alabilirsiniz.");
+//     }
+// }
+// kontrolEt(yas);
+
+//geriye değer döndüren metot tanımlamak:
+
+//fonksiyonu (metotu) dışarı çıkarmak,taşımak için kullanılır,
+//bir metotu bitiren anahtar kelimedir.
+//fonksiyonun yani metotun sonucunu kıvırcık prantezlerin dışından da
+//ulaşabilmek için 'return' anahtar kelimesini kullanıyoruz.
+//return fonksiyonun sonucunu çağrıldığı yere bırakır..o yüzden dilediğimiz yere çağırabiliriz.
+//aşağıdaki örnekte console.log kıvırcık parantezlerin içinde tanımlandığından
+// cube(3);
+// function cube(sayi) {
+//     let sonuc = sayi * sayi * sayi;
+//     console.log(sonuc);
+// }
+
+//aşağıdaki fonksiyonlar iki birbirinden ayrı metotlardır.
+//bu yüzden kullanılmış aynı isimler de birbirinden aslında farklıdır.(farklı bloklarda olduğu için)
+//return ile fonksiyon döndürüldükten sonra returnnün altına yazılan kodlar çalışmaz.
+//yani return il aslında kodu bitirmiş oluyoruz.
+// function cube(sayi) {
+//     let sonuc = sayi * sayi * sayi;
+//     return sonuc;
+// }
+// let donendeger = cube(2);
+// kareAl(donendeger);
+// function kareAl(sayi) {
+//     let sonuc = sayi * sayi;
+//     console.log(sonuc);
+// }
+//geriye değer döndürmeyen metotlar
+//return yok,
+//bunlara 'void' denir
+// function yazdir() {
+//     console.log("idil");
+// }
+// yazdir();//void:geriye değer döndürmeyen demektir..

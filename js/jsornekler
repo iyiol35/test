@@ -1,0 +1,82 @@
+//ÇARPIM TABLOSU:
+// for (let i = 1; i <= 10; i++) {
+//     for (let j = 1; j <= 10; j++) {
+//         console.log(i + "x" + j + "=" + (i * j));
+//     }
+//     console.log("----------------");
+// }
+
+//ASAL SAYI BULMA:
+// let sayi = Number(prompt("Lütfen bir sayı giriniz:"));
+// let sonuc = true;
+// for (let i = 2; i <= Math.floor(sayi / 2); i++) {
+//     if (sayi % i == 0) {
+//         //asal değil
+//         sonuc = false;
+//         break;
+//     }
+// }
+// if (sonuc) {
+//     alert(sayi + " asaldır.")
+// } else {
+//     alert(sayi + " asal değildir.")
+// }
+
+//FAKTÖRYEL HESAPLAMA:
+// let sayi = Number(prompt("Lütfen bir sayı giriniz:"));
+// let carpim = 1;
+// for (let i = 1; i <= sayi; i++){
+//     carpim = carpim * i;
+// }
+// alert("Sonuç:" + carpim);
+
+//ARMSTRONG SAYISI BULMA:
+//sayıların küplerinin toplmı sayının kendisine eşit ise bu sayı armstrong sayısıdır.
+//153-370-407; 1*1*1 + 5*5*5 + 3*3*3=153 gibi,
+// let sayi = prompt("Lütfen bir sayı giriniz:")
+// let toplam = 0;
+// for (let i = 0; i < sayi.length; i++) {
+//     let rakam = sayi.charAt(i);
+//     toplam += rakam * rakam * rakam;
+// }
+// if (Number(sayi) == toplam) {
+//     alert("armstrog sayısıdır.")
+// } else {
+//     alert("armstrong sayısı değildir.")
+// }
+
+//-----METOT ÖRNEKLER:-----
+
+//kelime sayısı bulma uygulaması:
+// let metin = "Ders çalışmak çok zor,dizi izlemek istiyoruMMM.";
+// let harf = prompt("Lütfen harf giriniz");
+// let sonuc = bul(harf);
+// alert("harf sayısı:" + sonuc);
+// function bul(harf) {
+//     let toplam = 0;
+//     for (let i = 0; i < metin.length; i++) {
+//         if (metin.charAt(i).toLowerCase() === harf.toLowerCase()) {
+//             toplam += 1;
+//         }
+//     }
+//     return toplam;
+// }
+//Mükemmel sayı bulma uygulaması
+
+//mükemmel sayı:Bir sayının tam bölündüğü sayıların toplamı,kendisinin iki katına eşittir.
+//6 =>tam bölündüğü sayılar:1,2,3,6: bölündüğü sayıların toplamı:1+2+3+6=12=>12=6x2;gibi,
+// function isPerfectNumber(number) {
+//     let toplam = 0;
+//     for (let i = 2; i <= number / 2; i++) {//burda 1ve sayının kendisini dahil etmedik.
+//         if (number % i == 0) {
+//             toplam += i;
+
+//         }
+//     } toplam += 1 + number;
+//     if (toplam == number * 2) {
+//         console.log("Mükemmel sayıdır.");
+//     } else {
+//         console.log("Mükemmel sayı değildir.");
+//     }
+// }
+// isPerfectNumber(44);

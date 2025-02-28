@@ -1,0 +1,86 @@
+//----SWITCH-CASE UYGULAMALARI----
+//const altSatir = "\r\n";
+// let gunler = "1-PAZARTESİ" + altSatir
+//     + "2-SALI" + altSatir
+//     + "3-ÇARŞAMBA" + altSatir
+//     + "4-PERŞEMBE" + altSatir
+//     + "5-CUMA" + altSatir
+//     + "6-CUMARTESİ" + altSatir
+//     + "7-PAZAR" + altSatir
+//     + "Lütfen gün seçiminizi yapınız:";
+// let secilenGun = prompt(gunler);
+// switch (secilenGun) {
+//     case "1":
+//         alert("Seçilen gün PAZARTESİ'dir.");
+//         console.log("işgünü");
+//         break;
+//     case "2":
+//         alert("Seçilen gün SALI'dır.");
+//         console.log("salı sallanır");
+//         break;
+//     case "3":
+//         alert("Seçilen gün ÇARŞAMBA'dır.");
+//         console.log("çarşamba'yı sel aldı");
+//         break;
+//     case "4":
+//         alert("Seçilen gün PERŞEMBE'dir");
+//         console.log("perşembe'yi el aldı");
+//         break;
+//     case "5":
+//         alert("Seçilen gün CUMA'dır.");
+//         console.log("tatil başlıyor");
+//     case "6":
+//         alert("Seçilen gün CUMARTESİ'dir;.")
+//         console.log("avm time!!");
+//         break;
+//     case "7":
+//         alert("Seçilen gün PAZAR'dır.");
+//         console.log("işyeri sendromu:((");
+//         break;
+//     default:
+//         alert("Lütfen geçerli bir gün seçiniz!");
+//         console.log("gün mü kalmadı..alooo!!");
+//         break;
+// }
+//ATM UYGULAMASI
+// 1 - bakiye görüntüleme
+// 2 - para çekme
+// 3 - para yatırma
+// 4-çıkış
+
+// let altSatir = "\r\n";
+// let bakiye = 1000;
+// let metin = "1-BAKİYE GÖRÜNTÜLEME" + altSatir
+//     + "2-PARA ÇEKME" + altSatir
+//     + "3-PARA YATIRMA" + altSatir
+//     + "4-ÇIKIŞ" + altSatir
+//     + "Lütfen yapmak istediğiniz işemi giriniz:"
+// let sayi = prompt(metin);
+// switch (sayi) {
+//     case "1":
+//         alert("Bakiyeniz:" + "" + bakiye + "TL'dir.");
+//         break;
+//     case "2":
+//         let cekilenMiktar = Number(prompt("Çekmek istediğiniz mitarı giriniz:"));
+//         if (cekilenMiktar < bakiye) {
+//             bakiye = bakiye - cekilenMiktar;
+//             alert("Bakiyeniz:" + "" + bakiye + "TL'dir.");
+//         }
+//         else {
+//             alert("Bakiyeniz yetersizdir." + altSatir
+//                 + "Mevcut bakiyeniz:" + "" + bakiye
+//             )
+//         }
+//         break;
+//     case "3":
+//         let paraYatirma = Number(prompt("Lütfen yatırmak istediğiniz tutarı giriniz:"));
+//         bakiye = bakiye + paraYatirma;
+//         alert("Bakiyeniz:" + "" + bakiye + "TL'dir");
+//         break;
+//     case "4":
+//         alert("Çıkışınız başarılı.")
+//         break;
+//     default:
+//         alert("Lütfen geçerli 1 ile 4 arasında bir sayı seçiniz!!")
+
+// };
